@@ -1,0 +1,71 @@
+/* Genel stil ayarları */
+body {
+    font-family: Arial, sans-serif; /* Yazı tipi */
+    background-image: url('/images/bg.png'); /* Arka plan görseli */
+    background-size: cover; /* Arka plan görselini tam kapla */
+    background-position: center; /* Arka plan görselini ortala */
+    background-attachment: fixed; /* Arka plan görselini sabit tut */
+    margin: 0; /* Sayfa kenar boşluklarını sıfırla */
+    padding: 0; /* Sayfa iç boşluklarını sıfırla */
+}
+
+/* İçerik konteyneri */
+.container {
+    width: 80%; /* Konteyner genişliği */
+    margin: 0 auto; /* Ortalamak için yatay boşluk */
+    padding: 20px; /* İç boşluk */
+    background-color: rgba(255, 255, 255, 0.8); /* Beyaz arka plan ve %80 opaklık */
+    border-radius: 8px; /* Köşe yuvarlama */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+
+/* Başlık */
+h1 {
+    text-align: center; /* Başlığı ortala */
+    color: #333; /* Başlık rengi */
+}
+
+/* Form listesi konteyneri */
+#formsContainer {
+    display: flex; /* Flexbox düzeni */
+    flex-direction: column; /* Elemanları dikey olarak sırala */
+    gap: 20px; /* Elemanlar arasındaki boşluk */
+    margin-top: 20px; /* Üst boşluk */
+}
+
+/* Form alanları */
+.form {
+    padding: 15px; /* İç boşluk */
+    border: 1px solid #ddd; /* Kenarlık rengi */
+    border-radius: 8px; /* Köşe yuvarlama */
+    background-color: rgba(250, 250, 250, 0.9); /* Form arka planı ve %90 opaklık */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+
+/* Form başlığı */
+.form h3 {
+    margin: 0 0 10px 0; /* Margin ayarları */
+    color: #007BFF; /* Başlık rengi */
+}
+
+/* Form metinleri */
+.form p {
+    margin: 5px 0; /* Margin ayarları */
+    color: #555; /* Metin rengi */
+}
+
+/* Form butonları */
+.form button {
+    margin-top: 10px; /* Üst boşluk */
+    padding: 10px 15px; /* İç boşluk */
+    border: none; /* Kenarlık yok */
+    border-radius: 4px; /* Köşe yuvarlama */
+    background-color: #007BFF; /* Arka plan rengi */
+    color: #fff; /* Yazı rengi */
+    cursor: pointer; /* Fare işareti */
+    transition: background-color 0.3s; /* Arka plan renginin geçiş süresi */
+}
+
+.form button:hover {
+    background-color: #0056b3; /* Hover durumunda arka plan rengi */
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol</title>
+    <link rel="stylesheet" href="css/register.css">
+    <script src="/js/register.js" defer></script>
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <form id="form1" onsubmit="registerUser(); return false;">
+                <h2>Kayıt Ol</h2>
+                <div class="radio-group">
+                    <div>
+                        <input type="radio" id="roleAcademic" name="role" value="academic" onclick="showForm('academic')" />
+                        <label for="roleAcademic">Akademik Personel</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="roleGraduate" name="role" value="graduate" onclick="showForm('graduate')" />
+                        <label for="roleGraduate">Mezun</label>
+                    </div>
+                </div>
+
+                <div id="academicForm" style="display:none;">
+                    <div class="logo-container">
+                        <img src="/images/logo-dark.png" alt="Üniversite Logosu" class="logo">
+                        <h2>Sakarya Uygulamalı Bilimler Üniversitesi</h2>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="txtTc" name="txtTc" class="form-control" placeholder="11 Haneli TC Kimlik No/Yabancı Kimlik No" pattern="\d{11}" title="TC Kimlik No 11 haneli olmalıdır." />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="txtName" name="txtName" class="form-control" placeholder="Ad Soyad" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="txtMail" name="txtMail" class="form-control" placeholder="Mail (@subu.edu.tr uzantılı)" pattern=".+@subu\.edu\.tr$" title="Mail adresi @subu.edu.tr ile bitmelidir." />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="txtPhone" name="txtPhone" class="form-control" placeholder="Cep Telefonu" pattern="\d{11}" title="Cep telefonunuz 11 haneli olmalıdır." />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="txtInstitutionalNo" name="txtInstitutionalNo" class="form-control" placeholder="Kurum Sicil No" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="txtFaculty" name="txtFaculty" class="form-control" placeholder="Fakültesi" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="txtDepartment" name="txtDepartment" class="form-control" placeholder="Bölümü" />
+                    </div>
+                    <div class="form-group">
+                        <select id="ddlPosition" name="ddlPosition" class="form-control">
+                            <option value="Dekan">Dekan</option>
+                            <option value="Dekan Yardimcisi">Dekan Yardımcısı</option>
+                            <option value="Ogretim Uyesi">Öğretim Üyesi</option>
+                            <option value="Kalite Yöneticisi">Kalite Yöneticisi</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="txtOrcid" name="txtOrcid" class="form-control" placeholder="16 Haneli ORCID Numarası" pattern="\d{16}" title="ORCID Numarası 16 haneli olmalıdır." />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="txtYokNo" name="txtYokNo" class="form-control" placeholder="6 Haneli YÖK Araştırmacı No" pattern="\d{6}" title="YÖK Araştırmacı Numarası 6 haneli olmalıdır." />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+                </div>
+
+                <div id="graduateForm" style="display:none;">
+                    <div class="logo-container">
+                        <img src="/images/logo-dark.png" alt="Üniversite Logosu" class="logo">
+                        <h2>Sakarya Uygulamalı Bilimler Üniversitesi</h2>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="txtGraduateTc" name="txtGraduateTc" class="form-control" placeholder="11 Haneli TC Kimlik No/Yabancı Kimlik No" pattern="\d{11}" title="TC Kimlik No 11 haneli olmalıdır." />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="txtStudentNo" name="txtStudentNo" class="form-control" placeholder="Öğrenci No" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="txtGraduateName" name="txtGraduateName" class="form-control" placeholder="Ad Soyad" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="txtGraduateMail" name="txtGraduateMail" class="form-control" placeholder="Mail (@subu.edu.tr uzantılı)" pattern=".+@subu\.edu\.tr$" title="Mail adresi @subu.edu.tr ile bitmelidir." />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="txtGraduatePhone" name="txtGraduatePhone" class="form-control" placeholder="Cep Telefonu" pattern="\d{11}" title="Cep telefonunuz 11 haneli olmalıdır." />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="txtGraduateFaculty" name="txtGraduateFaculty" class="form-control" placeholder="Fakültesi" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="txtGraduateDepartment" name="txtGraduateDepartment" class="form-control" placeholder="Bölümü" />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

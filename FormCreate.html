@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Oluşturma ve Yayınlama</title>
+    <link rel="stylesheet" href="css/FormCreate.css">
+</head>
+<body>
+    <div class="background">
+        <div class="login-container">
+            <img src="/images/logo-dark.png" alt="Üniversite Logosu" class="logo">
+            <h1>Sakarya Uygulamalı Bilimler Üniversitesi</h1>
+            <h2>Form Oluşturma ve Yayınlama</h2>
+            <form id="createForm">
+                <div class="form-group">
+                    <label for="txtFormId">Form ID</label>
+                    <input type="text" id="txtFormId" name="formId" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="selectPosition">Görev Unvanı</label>
+                    <select id="selectPosition" name="position" class="form-control" required>
+                        <option value="Dekan">Dekan</option>
+                        <option value="Dekan Yardimcisi">Dekan Yardımcısı</option>
+                        <option value="Ogretim Uyesi">Öğretim Üyesi</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="createForm()">Formu Oluştur</button>
+                <a href="FormsView.html" class="btn btn-secondary">Formları Görüntüle</a>
+            </form>
+        </div>
+    </div>
+    <script src="js/FormCreate.js" defer></script>
+</body>
+</html>

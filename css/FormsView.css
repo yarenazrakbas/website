@@ -1,0 +1,64 @@
+/* Genel stil ayarları */
+body {
+    font-family: Arial, sans-serif; /* Yazı tipi */
+    background-image: url('/images/bg.png'); /* Arka plan görseli */
+    background-size: cover; /* Görseli tüm alanı kaplayacak şekilde ölçeklendir */
+    background-position: center; /* Görseli ortala */
+    background-attachment: fixed; /* Arka planın sabit kalmasını sağlar */
+    margin: 0; /* Margin sıfırla */
+    padding: 0; /* Padding sıfırla */
+}
+
+/* İçerik konteyneri */
+.container {
+    max-width: 800px; /* Maksimum genişlik */
+    margin: 50px auto; /* Üst ve alt boşluk, ortalamak için yatay boşluk */
+    background-color: rgba(255, 255, 255, 0.9); /* Beyaz arka plan ve %90 opaklık */
+    padding: 20px; /* İç boşluk */
+    border-radius: 8px; /* Köşe yuvarlama */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+
+/* Başlık */
+h1 {
+    text-align: center; /* Başlığı ortala */
+    color: #333; /* Başlık rengi */
+}
+
+/* Form alanları */
+.form {
+    border: 1px solid #ddd; /* Kenarlık rengi */
+    padding: 15px; /* İç boşluk */
+    margin-bottom: 10px; /* Alt boşluk */
+    border-radius: 4px; /* Köşe yuvarlama */
+    background-color: rgba(250, 250, 250, 0.9); /* Form arka planı ve %90 opaklık */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+
+/* Form başlığı */
+.form h3 {
+    margin-top: 0; /* Üst boşluğu sıfırla */
+    color: #007BFF; /* Başlık rengi */
+}
+
+/* Form metinleri */
+.form p {
+    margin: 5px 0; /* Margin ayarları */
+    color: #555; /* Metin rengi */
+}
+
+/* Form butonları */
+.form button {
+    margin-top: 10px; /* Üst boşluk */
+    padding: 10px 15px; /* İç boşluk */
+    border: none; /* Kenarlık yok */
+    border-radius: 4px; /* Köşe yuvarlama */
+    background-color: #007BFF; /* Arka plan rengi */
+    color: #fff; /* Yazı rengi */
+    cursor: pointer; /* Fare işareti */
+    transition: background-color 0.3s; /* Arka plan renginin geçiş süresi */
+}
+
+.form button:hover {
+    background-color: #0056b3; /* Hover durumunda arka plan rengi */
+}

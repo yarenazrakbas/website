@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Düzenleme</title>
+    <link rel="stylesheet" href="css/FormEdit.css">
+    <script src="js/FormEdit.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <img src="/images/logo-dark.png" alt="Üniversite Logosu" class="logo">
+        <h1>Sakarya Uygulamalı Bilimler Üniversitesi</h1>
+        <h2>Form Düzenleme</h2>
+        <form id="editForm">
+            <label for="txtFormName">Form Adı</label>
+            <input type="text" id="txtFormName" name="formName" required>
+            <label for="txtCreatedBy">Oluşturan</label>
+            <input type="text" id="txtCreatedBy" name="createdBy" required>
+            <label for="startDate">Başlangıç Tarihi</label>
+            <input type="date" id="startDate" name="startDate" required>
+            <label for="endDate">Bitiş Tarihi</label>
+            <input type="date" id="endDate" name="endDate" required>
+            <div id="formFieldsContainer">
+                <!-- Dinamik olarak alanlar buraya eklenecek -->
+            </div>
+            <button type="button" onclick="openTypeModal()">+ Alan Ekle</button>
+            <button type="button" onclick="saveForm()">Formu Kaydet ve Yayınla</button>
+        </form>
+    </div>
+
+    <!-- Alan Tipi Seçimi Modal -->
+    <div id="typeModal" class="modal">
+        <div class="modal-content">
+            <p>Alan Tipini Seçin:</p>
+            <button onclick="chooseType('textbox')">Metin Kutusu</button>
+            <button onclick="chooseType('selectbox')">Seçim Kutusu</button>
+            <button onclick="closeTypeModal()">İptal</button>
+        </div>
+    </div>
+
+    <!-- Veri Türü Seçimi Modal -->
+    <div id="dataTypeModal" class="modal">
+        <div class="modal-content">
+            <p>Veri Türünü Seçin:</p>
+            <button onclick="addField('int')">Tam Sayı (Int)</button>
+            <button onclick="addField('string')">Metin (String)</button>
+            <button onclick="addField('float')">Ondalık Sayı (Float)</button>
+            <button onclick="addField('boolean')">Doğru/Yanlış (Boolean)</button>
+            <button onclick="closeDataTypeModal()">İptal</button>
+        </div>
+    </div>
+</body>
+</html>

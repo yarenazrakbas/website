@@ -1,0 +1,105 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif; /* Yazı tipi */
+    background-color: #f2f2f2; /* Arka plan rengi */
+    margin: 0; /* Sayfanın kenar boşluklarını sıfırlar */
+    padding: 0; /* Sayfanın iç boşluklarını sıfırlar */
+    background-image: url('/images/bg.png'); /* Arka plan görseli */
+    background-size: cover; /* Görseli tüm alanı kaplayacak şekilde ölçeklendir */
+    background-position: center; /* Görseli ortala */
+    background-repeat: no-repeat; /* Görselin tekrar etmesini engelle */
+}
+
+/* İçerik konteyneri */
+.container {
+    width: 100%; /* Konteynerin genişliği */
+    max-width: 600px; /* Maksimum genişlik */
+    margin: 50px auto; /* Üstten boşluk, ortalama */
+    background-color: rgba(255, 255, 255, 0.9); /* Arka plan rengi ve saydamlık */
+    padding: 20px; /* İç boşluk */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+    border-radius: 8px; /* Köşe yuvarlama */
+}
+
+/* Başlık ve logo kısmı */
+.header {
+    text-align: center; /* Metin ortalama */
+    margin-bottom: 20px; /* Alt boşluk */
+}
+
+.header .logo {
+    width: 200px; /* Logo genişliği */
+    height: auto; /* Logo yüksekliği otomatik */
+}
+
+.header h2 {
+    margin: 10px 0; /* Üst ve alt boşluk */
+    color: #007bff; /* Başlık rengi */
+}
+
+/* Ana başlık */
+h1 {
+    text-align: center; /* Metin ortalama */
+    color: #333; /* Renk */
+}
+
+/* Bilgi alanları */
+.info {
+    margin-bottom: 15px; /* Alt boşluk */
+}
+
+.info label {
+    font-weight: bold; /* Kalın yazı tipi */
+    color: #007bff; /* Renk */
+}
+
+.info p {
+    margin: 5px 0; /* Üst ve alt boşluk */
+    padding: 10px; /* İç boşluk */
+    background-color: #f9f9f9; /* Arka plan rengi */
+    border: 1px solid #ddd; /* Kenarlık rengi */
+    border-radius: 4px; /* Köşe yuvarlama */
+}
+
+/* Butonlar için stil */
+.form-section {
+    display: flex; /* Flexbox düzeni */
+    justify-content: center; /* Yatay ortalama */
+    gap: 10px; /* Butonlar arası boşluk */
+    margin-top: 20px; /* Üst boşluk */
+}
+
+.form-section button {
+    background-color: #007bff; /* Buton arka plan rengi */
+    color: white; /* Yazı rengi */
+    padding: 10px 20px; /* İç boşluk */
+    border: none; /* Kenarlık yok */
+    border-radius: 4px; /* Köşe yuvarlama */
+    cursor: pointer; /* İmleç tipi */
+    font-size: 16px; /* Yazı tipi boyutu */
+}
+
+.form-section button:hover {
+    background-color: #0056b3; /* Hover durumunda arka plan rengi */
+}
+
+/* Ana sayfa butonu */
+.button-container {
+    text-align: center; /* Metin ortalama */
+    margin-top: 30px; /* Üst boşluk */
+}
+
+.button-container a {
+    background-color: #007bff; /* Arka plan rengi */
+    color: white; /* Yazı rengi */
+    padding: 10px 20px; /* İç boşluk */
+    text-decoration: none; /* Alt çizgi yok */
+    border-radius: 4px; /* Köşe yuvarlama */
+    display: inline-block; /* Satır içi blok */
+    transition: background-color 0.3s ease; /* Renk geçiş efekti */
+}
+
+.button-container a:hover {
+    background-color: #0056b3; /* Hover durumunda arka plan rengi */
+}

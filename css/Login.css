@@ -1,0 +1,139 @@
+/* Genel stiller */
+body, html {
+    height: 100%; /* Sayfanın yüksekliğini %100 yapar */
+    margin: 0; /* Kenar boşluklarını sıfırlar */
+    font-family: Arial, sans-serif; /* Yazı tipi */
+}
+
+/* Arka plan görseli */
+.background {
+    background-image: url('/images/bg.png'); /* Arka plan görseli */
+    background-size: cover; /* Görseli tam olarak kaplamasını sağlar */
+    background-position: center; /* Görseli ortalar */
+    height: 100%; /* Yüksekliği %100 yapar */
+    display: flex; /* Flexbox düzeni */
+    align-items: center; /* Dikey ortalama */
+    justify-content: center; /* Yatay ortalama */
+}
+
+/* Giriş formu konteyneri */
+.login-container {
+    width: 400px; /* Konteyner genişliği */
+    background-color: rgba(255, 255, 255, 0.9); /* Arka plan rengi ve saydamlık */
+    padding: 30px; /* İç boşluk */
+    border-radius: 10px; /* Köşe yuvarlama */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Gölge efekti */
+}
+
+/* Giriş kutusu stili */
+.login-box {
+    text-align: center; /* Metni ortalar */
+}
+
+/* Logo stili */
+.logo {
+    max-width: 150px; /* Maksimum genişlik */
+    margin-bottom: 20px; /* Alt boşluk */
+}
+
+/* Başlık stili */
+h2 {
+    color: #007bff; /* Başlık rengi */
+    margin-bottom: 20px; /* Alt boşluk */
+}
+
+/* Hata mesajı stili */
+.error-message {
+    color: #dc3545; /* Hata mesajı rengi */
+    font-size: 14px; /* Yazı tipi boyutu */
+    text-align: center; /* Metni ortalar */
+    margin-bottom: 15px; /* Alt boşluk */
+}
+
+/* Form grup alanları */
+.form-group {
+    margin-bottom: 20px; /* Alt boşluk */
+}
+
+/* Form kontrol elemanları */
+.form-control {
+    width: 100%; /* Genişliği %100 yapar */
+    padding: 10px; /* İç boşluk */
+    border: 1px solid #ced4da; /* Kenarlık rengi */
+    border-radius: 4px; /* Köşe yuvarlama */
+    box-sizing: border-box; /* Kutu boyutlandırma */
+    transition: border-color 0.3s; /* Kenarlık rengi değişimi için geçiş efekti */
+}
+
+/* Form kontrol elemanları için odak durumu */
+.form-control:focus {
+    border-color: #007bff; /* Kenarlık rengi odaklandığında */
+    outline: none; /* Odak kenarlığını kaldırır */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25); /* Hafif gölge efekti */
+}
+
+/* Form bağlantıları stili */
+.form-links {
+    margin-top: 15px; /* Üst boşluk */
+}
+
+/* Form bağlantı linkleri */
+.form-links a {
+    color: #007bff; /* Bağlantı rengi */
+    text-decoration: none; /* Alt çizgi yok */
+}
+
+/* Bağlantı hover durumu */
+.form-links a:hover {
+    text-decoration: underline; /* Alt çizgi ekler */
+}
+
+/* Buton stilleri */
+.btn {
+    display: block; /* Blok olarak görüntüler */
+    width: 100%; /* Genişliği %100 yapar */
+    padding: 12px 0; /* İç boşluk (buton yüksekliği) */
+    border-radius: 4px; /* Köşe yuvarlama */
+    font-size: 16px; /* Yazı tipi boyutu */
+    line-height: 1.5; /* Yükseklik hizalamasını artırır */
+    margin-bottom: 10px; /* Alt boşluk */
+    cursor: pointer; /* İmleç tipi */
+    border: none; /* Kenarlık yok */
+    color: #fff; /* Yazı rengi */
+    text-align: center; /* Metni ortalar */
+    text-decoration: none; /* Alt çizgi yok */
+    box-sizing: border-box; /* Padding ve border genişliği dahil */
+}
+
+/* Birincil buton stili */
+.btn-primary {
+    background-color: #007bff; /* Arka plan rengi */
+}
+
+/* Birincil buton hover ve odak durumu */
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #0056b3; /* Arka plan rengi hover ve odak durumunda */
+}
+
+/* İkincil buton stili */
+.btn-secondary {
+    background-color: #6c757d; /* Arka plan rengi */
+}
+
+/* İkincil buton hover ve odak durumu */
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background-color: #5a6268; /* Arka plan rengi hover ve odak durumunda */
+}
+
+/* Varsayılan buton stili */
+.btn-default {
+    background-color: #dc3545; /* Arka plan rengi */
+}
+
+/* Varsayılan buton hover ve odak durumu */
+.btn-default:hover,
+.btn-default:focus {
+    background-color: #c82333; /* Arka plan rengi hover ve odak durumunda */
+}

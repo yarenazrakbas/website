@@ -1,0 +1,138 @@
+/* Genel stil ayarları */
+body {
+    font-family: Arial, sans-serif; /* Genel yazı tipi */
+    background-color: #f2f2f2; /* Arka plan rengi */
+    margin: 0; /* Sayfanın kenar boşluklarını sıfırla */
+    padding: 0; /* Sayfanın iç boşluklarını sıfırla */
+    background-image: url('/images/bg.png'); /* Arka plan görseli */
+    background-size: cover; /* Arka plan görselini tam olarak kapla */
+    background-position: center center; /* Arka plan görselini ortala */
+    background-attachment: fixed; /* Arka plan görselini kaydırmada sabit tut */
+    background-repeat: no-repeat; /* Arka plan görselini tekrar etme */
+    height: 100vh; /* Sayfanın yüksekliğini tam ekran yap */
+    display: flex; /* Flexbox düzenini aktif et */
+    justify-content: center; /* İçeriği yatayda ortala */
+    align-items: center; /* İçeriği dikeyde ortala */
+}
+
+/* İçerik konteyneri */
+.container {
+    width: 100%; /* Konteynerin genişliğini tam yap */
+    max-width: 600px; /* Konteynerin maksimum genişliği */
+    background-color: rgba(255, 255, 255, 0.9); /* Beyaz arka plan ve %90 opaklık */
+    padding: 20px; /* Konteynerin iç boşlukları */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+    border-radius: 8px; /* Köşeleri yuvarlat */
+    text-align: center; /* İçeriği ortala */
+}
+
+/* Logo */
+.logo {
+    max-width: 150px; /* Logonun maksimum genişliği */
+    margin-bottom: 20px; /* Logonun altındaki boşluk */
+}
+
+/* Başlık */
+h1 {
+    font-size: 20px; /* Başlık yazı tipi boyutu */
+    color: #007bff; /* Başlık yazı rengi */
+    margin-bottom: 20px; /* Başlık altındaki boşluk */
+}
+
+h2 {
+    font-size: 20px; /* İkinci başlık yazı tipi boyutu */
+    color: black; /* İkinci başlık yazı rengi */
+    margin-bottom: 20px; /* İkinci başlık altındaki boşluk */
+}
+
+/* Form alanları */
+form {
+    display: flex; /* Flexbox düzeni */
+    flex-direction: column; /* Form elemanlarını dikey olarak düzenle */
+    align-items: center; /* Form elemanlarını yatayda ortala */
+}
+
+label {
+    font-weight: bold; /* Etiket yazısını kalın yap */
+    color: #007bff; /* Etiket yazı rengi */
+    margin-bottom: 5px; /* Etiketin altındaki boşluk */
+}
+
+/* Giriş alanları */
+input[type="text"], input[type="date"] {
+    width: 100%; /* Giriş alanının genişliği */
+    height: 40px; /* Giriş alanının yüksekliği */
+    padding: 10px; /* Giriş alanının iç boşlukları */
+    border: 1px solid #ccc; /* Giriş alanı kenarlığı */
+    border-radius: 4px; /* Giriş alanı köşelerini yuvarlat */
+    font-size: 16px; /* Giriş alanı yazı tipi boyutu */
+    box-sizing: border-box; /* Kenarlık ve iç boşlukları genişlik hesaplamasına dahil et */
+    margin-bottom: 10px; /* Giriş alanının altındaki boşluk */
+}
+
+/* Dinamik Alanlar */
+#formFieldsContainer {
+    width: 100%; /* Dinamik alanların genişliği */
+    margin-bottom: 20px; /* Dinamik alanların altındaki boşluk */
+}
+
+/* Butonlar */
+button {
+    background-color: #007bff; /* Buton arka plan rengi */
+    color: white; /* Buton yazı rengi */
+    padding: 10px 20px; /* Buton iç boşlukları */
+    border: none; /* Buton kenarlığı yok */
+    border-radius: 4px; /* Buton köşelerini yuvarlat */
+    cursor: pointer; /* Buton üzerine gelindiğinde fare işareti */
+    font-size: 16px; /* Buton yazı tipi boyutu */
+    margin-top: 10px; /* Butonun üstündeki boşluk */
+    transition: background-color 0.3s; /* Buton arka plan rengi geçiş süresi */
+}
+
+button:hover {
+    background-color: #0056b3; /* Buton üzerine gelindiğinde arka plan rengi */
+}
+
+/* Modal stili */
+.modal {
+    display: none; /* Modal varsayılan olarak görünmesin */
+    position: fixed; /* Modalın pozisyonu sabit */
+    z-index: 1; /* Modalın diğer içeriklerin üstünde olması için z-index */
+    left: 0; /* Modalın soldan sıfır piksel olması */
+    top: 0; /* Modalın yukarıdan sıfır piksel olması */
+    width: 100%; /* Modalın genişliği */
+    height: 100%; /* Modalın yüksekliği */
+    overflow: auto; /* Taşan içerik için kaydırma çubuğu */
+    background-color: rgba(0, 0, 0, 0.4); /* Modal arka planı ve opaklığı */
+}
+
+.modal-content {
+    background-color: #fefefe; /* Modal içeriği arka plan rengi */
+    margin: 15% auto; /* Modalın üstten ve yatay ortalanmış olması */
+    padding: 20px; /* Modal içeriği padding */
+    border: 1px solid #888; /* Modal kenarlığı */
+    width: 80%; /* Modal genişliği */
+    max-width: 500px; /* Modal maksimum genişliği */
+    text-align: center; /* Modal içeriğini ortala */
+    border-radius: 8px; /* Modal köşelerini yuvarlat */
+}
+
+.modal-content p {
+    font-size: 18px; /* Modal içerik yazı tipi boyutu */
+    margin-bottom: 15px; /* Modal içerik altındaki boşluk */
+}
+
+.modal-content button {
+    background-color: #007bff; /* Modal buton arka plan rengi */
+    color: #fff; /* Modal buton yazı rengi */
+    padding: 10px; /* Modal buton iç boşlukları */
+    border-radius: 4px; /* Modal buton köşelerini yuvarlat */
+    border: 1px solid #ccc; /* Modal buton kenarlığı */
+    margin: 5px; /* Modal butonlar arasındaki boşluk */
+    cursor: pointer; /* Modal buton üzerine gelindiğinde fare işareti */
+    transition: background-color 0.3s; /* Modal buton arka plan rengi geçiş süresi */
+}
+
+.modal-content button:hover {
+    background-color: #0056b3; /* Modal buton üzerine gelindiğinde arka plan rengi */
+}

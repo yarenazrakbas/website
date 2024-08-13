@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oturum Aç</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="background">
+        <div class="login-container">
+            <div class="login-box">
+                <img src="/images/logo-dark.png" alt="Üniversite Logosu" class="logo">
+                <h2>Sakarya Uygulamalı Bilimler Üniversitesi</h2>
+                <div id="ErrorMessage" class="error-message" style="display: none;">
+                    <span id="FailureText">Kullanıcı adı veya parola hatalı</span>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="UserName" class="form-control" placeholder="TC Kimlik Numarası" required />
+                </div>
+                <div class="form-group">
+                    <input type="password" id="Password" class="form-control" placeholder="Kullanıcı Şifresi" required />
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="RememberMe"> Beni Hatırla
+                    </label>
+                </div>
+                <button id="LogIn" class="btn btn-primary" onclick="login()">Giriş</button>
+                <a href="Register.html" class="btn btn-primary">Kaydol</a>
+                <button class="btn btn-default">e-Devlet ile Giriş Yap</button>
+                <div class="form-links">
+                    <a href="#">Şifremi Unuttum</a> |
+                    <a href="#">Öğrenci Numara Sorgulama</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Başarılı</title>
+    <link rel="stylesheet" href="css/panel.css"> 
+    <script src="/js/panel.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="/images/logo-dark.png" alt="Üniversite Logosu" class="logo">
+            <h2>Sakarya Uygulamalı Bilimler Üniversitesi</h2>
+        </div>
+        <h1>Giriş Başarılı</h1>
+        <div class="info">
+            <label>TC Kimlik No:</label>
+            <p id="lblTcNo"></p>
+        </div>
+        <div class="info">
+            <label>Ad Soyad:</label>
+            <p id="lblAdSoyad"></p>
+        </div>
+        <div class="info">
+            <label>Bölüm:</label>
+            <p id="lblBolum"></p>
+        </div>
+        <div class="info">
+            <label>Kullanıcı Türü:</label>
+            <p id="lblUserType"></p>
+        </div>
+        <div class="info">
+            <label>Görev:</label>
+            <p id="lblGorev"></p>
+        </div>
+        <div id="formSection" class="form-section">
+            <button id="createFormBtn" style="display:none;" onclick="redirectToFormCreation()">Form Oluştur</button>
+            <button id="viewFormsBtn" style="display:none;" onclick="redirectToFormList()">Üstünde Olan Formları Görüntüle</button>
+            <button id="viewFormsBtn2" style="display:none;" onclick="FormList()">Formları Görüntüle</button>
+        </div>
+        <div class="button-container">
+            <a href="login.html">Ana Sayfaya Dön</a>
+        </div>
+    </div>
+</body>
+</html>

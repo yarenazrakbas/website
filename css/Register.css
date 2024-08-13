@@ -1,0 +1,126 @@
+/* Genel stiller */
+body, html {
+    height: 100%; /* Sayfanın yüksekliğini %100 yapar */
+    margin: 0; /* Kenar boşluklarını sıfırlar */
+    font-family: Arial, sans-serif; /* Yazı tipi */
+    background-color: #f4f4f4; /* Arka plan rengi */
+    color: #333; /* Yazı rengi */
+}
+
+/* Arka plan görseli ve merkezi hizalama */
+.background {
+    background-image: url('/images/bg.png'); /* Arka plan görseli */
+    background-size: cover; /* Görselin tam olarak kaplamasını sağlar */
+    background-position: center; /* Görseli ortalar */
+    height: 100%; /* Yüksekliği %100 yapar */
+    display: flex; /* Flexbox düzeni */
+    align-items: center; /* Dikey ortalama */
+    justify-content: center; /* Yatay ortalama */
+}
+
+/* İçerik konteyneri */
+.container {
+    width: 80%; /* Konteyner genişliği */
+    max-width: 900px; /* Maksimum genişlik */
+    padding: 20px; /* İç boşluk */
+    background: rgba(255, 255, 255, 0.9); /* Arka plan rengi ve saydamlık */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+    border-radius: 8px; /* Köşe yuvarlama */
+}
+
+/* Başlık stil */
+h2 {
+    color: #007bff; /* Başlık rengi */
+    border-bottom: 2px solid #007bff; /* Alt kenarlık */
+    padding-bottom: 10px; /* Alt iç boşluk */
+    margin-bottom: 20px; /* Alt boşluk */
+    font-size: 24px; /* Yazı tipi boyutu */
+    text-align: center; /* Metni ortalar */
+}
+
+/* Radyo düğmeleri grubu */
+.radio-group {
+    display: flex; /* Flexbox düzeni */
+    justify-content: center; /* Yatay ortalama */
+    margin-bottom: 20px; /* Alt boşluk */
+}
+
+/* Radyo düğmeleri için stil */
+.radio-group div {
+    margin-right: 20px; /* Sağ boşluk */
+}
+
+/* Form grup alanları */
+.form-group {
+    margin-bottom: 15px; /* Alt boşluk */
+}
+
+/* Form grup etiketleri */
+.form-group label {
+    display: block; /* Blok olarak görüntüler */
+    font-weight: bold; /* Kalın yazı tipi */
+    margin-bottom: 5px; /* Alt boşluk */
+    color: #007bff; /* Etiket rengi */
+}
+
+/* Form giriş alanları */
+.form-group input[type="text"],
+.form-group select {
+    width: 100%; /* Genişliği %100 yapar */
+    padding: 10px; /* İç boşluk */
+    border: 1px solid #ddd; /* Kenarlık rengi */
+    border-radius: 4px; /* Köşe yuvarlama */
+    box-sizing: border-box; /* Kutu boyutlandırma */
+    font-size: 13px; /* Yazı tipi boyutu */
+}
+
+/* Giriş alanları için odak durumu */
+.form-group input[type="text"]:focus,
+.form-group select:focus {
+    border-color: #007bff; /* Kenarlık rengi odaklandığında */
+    outline: none; /* Odak kenarlığını kaldırır */
+}
+
+/* Buton stil */
+.btn {
+    display: block; /* Blok olarak görüntüler */
+    padding: 10px 20px; /* İç boşluk */
+    font-size: 16px; /* Yazı tipi boyutu */
+    font-weight: bold; /* Kalın yazı tipi */
+    color: #fff; /* Yazı rengi */
+    background-color: #007bff; /* Arka plan rengi */
+    border: none; /* Kenarlık yok */
+    border-radius: 4px; /* Köşe yuvarlama */
+    cursor: pointer; /* İmleç tipi */
+    text-align: center; /* Metni ortalar */
+    text-decoration: none; /* Alt çizgi yok */
+    margin-top: 10px; /* Üst boşluk */
+    width: 100%; /* Genişliği %100 yapar */
+    max-width: 200px; /* Maksimum genişlik */
+    margin-left: auto; /* Soldan otomatik boşluk */
+    margin-right: auto; /* Sağdan otomatik boşluk */
+}
+
+/* Buton hover durumu */
+.btn:hover {
+    background-color: #0056b3; /* Arka plan rengi hover durumunda */
+}
+
+/* Logo ve başlık stil */
+.logo-container {
+    text-align: center; /* Metni ortalar */
+    margin-bottom: 20px; /* Alt boşluk */
+}
+
+/* Logo stil */
+.logo {
+    max-width: 145px; /* Maksimum genişlik */
+    margin-bottom: 10px; /* Alt boşluk */
+}
+
+/* Logo ve başlık stil */
+.logo-container h2 {
+    margin: 0; /* Kenar boşluklarını sıfırlar */
+    font-size: 20px; /* Yazı tipi boyutu */
+    color: #007bff; /* Renk */
+}

@@ -1,0 +1,102 @@
+/* Genel stil ayarları */
+body {
+    font-family: Arial, sans-serif; /* Genel yazı tipi */
+    background-color: #f2f2f2; /* Arka plan rengi */
+    margin: 0; /* Sayfanın kenar boşluklarını sıfırla */
+    padding: 0; /* Sayfanın iç boşluklarını sıfırla */
+    background-image: url('/images/bg.png'); /* Arka plan görseli */
+    background-size: cover; /* Arka plan görselini tam olarak kapla */
+    background-position: center center; /* Arka plan görselini ortala */
+    background-attachment: fixed; /* Arka plan görselini kaydırmada sabit tut */
+    background-repeat: no-repeat; /* Arka plan görselini tekrar etme */
+    height: 100vh; /* Sayfanın yüksekliğini tam ekran yap */
+    display: flex; /* Flexbox düzenini aktif et */
+    justify-content: center; /* İçeriği yatayda ortala */
+    align-items: center; /* İçeriği dikeyde ortala */
+}
+
+/* İçerik konteyneri */
+.login-container {
+    width: 100%; /* Konteynerin genişliğini tam yap */
+    max-width: 600px; /* Konteynerin maksimum genişliği */
+    background-color: rgba(255, 255, 255, 0.9); /* Beyaz arka plan ve %90 opaklık */
+    padding: 20px; /* Konteynerin iç boşlukları */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+    border-radius: 8px; /* Köşeleri yuvarlat */
+    text-align: center; /* İçeriği ortala */
+}
+
+/* Logo */
+.logo {
+    max-width: 150px; /* Logonun maksimum genişliği */
+    margin-bottom: 20px; /* Logonun altındaki boşluk */
+}
+
+/* Başlık */
+h1 {
+    font-size: 20px; /* Başlık yazı tipi boyutu */
+    color: #007bff; /* Başlık yazı rengi */
+    margin-bottom: 10px; /* Başlık altındaki boşluk */
+}
+
+h2 {
+    font-size: 18px; /* İkinci başlık yazı tipi boyutu */
+    color: #333; /* İkinci başlık yazı rengi */
+    margin-bottom: 20px; /* İkinci başlık altındaki boşluk */
+}
+
+/* Form grupları */
+.form-group {
+    margin-bottom: 15px; /* Form gruplarının altındaki boşluk */
+}
+
+/* Etiketler */
+label {
+    display: block; /* Etiketi blok olarak göster */
+    font-weight: bold; /* Etiket yazısını kalın yap */
+    color: #007bff; /* Etiket yazı rengi */
+    margin-bottom: 5px; /* Etiketin altındaki boşluk */
+}
+
+/* Giriş alanları ve seçim kutuları */
+.form-control {
+    width: 100%; /* Alan genişliğini tam yap */
+    height: 40px; /* Alan yüksekliği */
+    padding: 10px; /* İç boşluk */
+    border: 1px solid #ccc; /* Kenarlık rengi */
+    border-radius: 4px; /* Köşe yuvarlama */
+    font-size: 16px; /* Yazı tipi boyutu */
+    box-sizing: border-box; /* Kenarlık ve iç boşlukları genişlik hesaplamasına dahil et */
+    margin-bottom: 10px; /* Alt boşluk */
+}
+
+/* Butonlar */
+.btn {
+    display: inline-block; /* Butonları satır içi blok olarak göster */
+    padding: 10px 20px; /* İç boşluk */
+    border: none; /* Kenarlık yok */
+    border-radius: 4px; /* Köşe yuvarlama */
+    cursor: pointer; /* Farenin üzerine gelindiğinde işaretçi */
+    font-size: 16px; /* Yazı tipi boyutu */
+    text-decoration: none; /* Alt çizgi yok */
+    margin-top: 10px; /* Üst boşluk */
+    transition: background-color 0.3s; /* Arka plan rengi geçiş süresi */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Birincil buton arka plan rengi */
+    color: white; /* Birincil buton yazı rengi */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Birincil buton hover arka plan rengi */
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* İkincil buton arka plan rengi */
+    color: white; /* İkincil buton yazı rengi */
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268; /* İkincil buton hover arka plan rengi */
+}
